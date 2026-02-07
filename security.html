@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How KoNote2 protects client data: encryption, access control, audit logging, and compliance features.">
+  <meta name="description" content="How KoNote2 protects participant data: encryption, access control, audit logging, and compliance features.">
   <title>Security & Privacy — KoNote2</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,7 +34,7 @@
       <div class="container">
         <h1>Security & Privacy</h1>
         <p class="hero-tagline">
-          How KoNote2 protects client data — and what you're responsible for.
+          How KoNote2 protects participant data — and what you're responsible for.
         </p>
       </div>
     </section>
@@ -65,7 +65,7 @@
             </p>
             <ul>
               <li><strong>Algorithm:</strong> Fernet (AES-128-CBC + HMAC-SHA256)</li>
-              <li><strong>Encrypted fields:</strong> Client names, birth dates, emails, phone numbers, sensitive custom fields</li>
+              <li><strong>Encrypted fields:</strong> Participant names, birth dates, emails, phone numbers, sensitive custom fields</li>
               <li><strong>Key storage:</strong> Your encryption key, stored as an environment variable</li>
               <li><strong>Key rotation:</strong> Built-in key rotation command for changing encryption keys</li>
             </ul>
@@ -81,7 +81,7 @@
               KoNote2 uses two separate PostgreSQL databases.
             </p>
             <ul>
-              <li><strong>Operational database:</strong> Client records, notes, plans (normal CRUD operations)</li>
+              <li><strong>Operational database:</strong> Participant records, notes, plans (normal CRUD operations)</li>
               <li><strong>Audit database:</strong> Immutable log of all data access and changes (INSERT-only)</li>
             </ul>
             <p class="text-muted">
@@ -96,15 +96,15 @@
               Five roles with different permissions, enforced at the middleware level.
             </p>
             <ul>
-              <li><strong>Administrator:</strong> System configuration (no direct client access)</li>
-              <li><strong>Program Manager:</strong> Full access to their programs' clients and staff</li>
-              <li><strong>Direct Service:</strong> Access to clients in their assigned programs</li>
+              <li><strong>Administrator:</strong> System configuration (no direct participant access)</li>
+              <li><strong>Program Manager:</strong> Full access to their programs' participants and staff</li>
+              <li><strong>Direct Service:</strong> Access to participants in their assigned programs</li>
               <li><strong>Front Desk:</strong> Limited access to specific fields only</li>
               <li><strong>Executive:</strong> Dashboard and reporting access</li>
             </ul>
             <p class="text-muted">
-              Staff can only see clients enrolled in programs they're assigned to.
-              Admins are deliberately blocked from client data.
+              Staff can only see participants enrolled in programs they're assigned to.
+              Admins are deliberately blocked from participant data.
             </p>
           </div>
 
@@ -115,7 +115,7 @@
             </p>
             <ul>
               <li><strong>Data changes:</strong> Create, update, delete with before/after values</li>
-              <li><strong>Data access:</strong> Who viewed which client record and when</li>
+              <li><strong>Data access:</strong> Who viewed which participant record and when</li>
               <li><strong>Authentication:</strong> Login, logout, failed login attempts</li>
               <li><strong>Metadata:</strong> Timestamp, user ID, IP address</li>
             </ul>
@@ -282,7 +282,7 @@
         <div class="card">
           <h3>GDPR Readiness</h3>
           <p>
-            For organisations serving European clients, KoNote2 includes:
+            For organisations serving European participants, KoNote2 includes:
           </p>
           <ul>
             <li>Consent tracking (consent_given_at field)</li>
@@ -323,9 +323,9 @@
         <div class="card">
           <h3>No Encrypted Search</h3>
           <p>
-            Encrypted fields cannot be searched using SQL queries. Client search
-            loads accessible clients into memory and filters in Python.
-            This works well up to ~2,000 clients but may slow down at larger scales.
+            Encrypted fields cannot be searched using SQL queries. Participant search
+            loads accessible participants into memory and filters in Python.
+            This works well up to ~2,000 participants but may slow down at larger scales.
           </p>
         </div>
 

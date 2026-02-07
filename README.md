@@ -1,6 +1,6 @@
 # KoNote2 Website
 
-Marketing and documentation website for [KoNote2](https://github.com/gilliankerr/KoNote-Redux), an open source client outcome management system for nonprofits.
+Marketing and documentation website for [KoNote2](https://github.com/gilliankerr/KoNote-Redux), an open source participant outcome management system for nonprofits.
 
 ## Structure
 

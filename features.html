@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KoNote2 features: client records, outcome plans, progress notes, metrics tracking, role-based access, audit logging, data erasure, and AI-assisted writing.">
+  <meta name="description" content="KoNote2 features: participant records, outcome plans, progress notes, metrics tracking, role-based access, audit logging, data erasure, and AI-assisted writing.">
   <title>Features — KoNote2</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,9 +46,9 @@
 
         <div class="card-grid">
           <div class="card">
-            <h3>Client Records</h3>
+            <h3>Participant Records</h3>
             <p>
-              Maintain records for each client with personal information,
+              Maintain records for each participant with personal information,
               program enrolment, and custom intake fields.
             </p>
             <ul>
@@ -76,12 +76,12 @@
           <div class="card">
             <h3>Progress Notes</h3>
             <p>
-              Document client interactions and track metric values over time.
+              Document participant interactions and track metric values over time.
             </p>
             <ul>
               <li>Quick notes for brief interactions</li>
               <li>Structured notes with sections and templates</li>
-              <li>Participant reflection — capture what the client is taking away</li>
+              <li>Participant reflection — capture what the participant is taking away</li>
               <li>Record metric values within notes</li>
               <li>Backdate notes with full audit trail</li>
               <li>Follow-up tracking</li>
@@ -109,8 +109,8 @@
             <ul>
               <li>Customisable event types (intake, discharge, crisis, etc.)</li>
               <li>Colour-coded event categories</li>
-              <li>Safety alerts attached to client records</li>
-              <li>Timeline view of client events</li>
+              <li>Safety alerts attached to participant records</li>
+              <li>Timeline view of participant events</li>
             </ul>
           </div>
 
@@ -123,7 +123,7 @@
               <li>Five roles: Admin, Program Manager, Direct Service, Front Desk, Executive</li>
               <li>Program-scoped access (staff only see their programs)</li>
               <li>Field-level visibility controls per role</li>
-              <li>Admins blocked from client data by default</li>
+              <li>Admins blocked from participant data by default</li>
             </ul>
           </div>
 
@@ -134,7 +134,7 @@
             </p>
             <ul>
               <li>All data changes logged with before/after values</li>
-              <li>Client record access logged</li>
+              <li>Participant record access logged</li>
               <li>Login/logout events</li>
               <li>Separate, immutable audit database</li>
               <li>Searchable audit log viewer</li>
@@ -157,7 +157,7 @@
           <div class="card">
             <h3>Self-Service Registration</h3>
             <p>
-              Let clients register themselves via a shareable link.
+              Let participants register themselves via a shareable link.
             </p>
             <ul>
               <li>Program-specific registration links</li>
@@ -192,7 +192,7 @@
               <li>Outcome goal improvement suggestions</li>
               <li>Note structure assistance</li>
               <li>Funder narrative generation from aggregate metrics</li>
-              <li>Privacy-safe — no client identifying information sent to AI</li>
+              <li>Privacy-safe — no participant identifying information sent to AI</li>
             </ul>
           </div>
 
@@ -202,7 +202,7 @@
               Get data out when you need it.
             </p>
             <ul>
-              <li>CSV export of client data and metrics</li>
+              <li>CSV export of participant data and metrics</li>
               <li>PDF progress reports</li>
               <li>Secure, time-limited export links with download tracking</li>
               <li>Audit log export</li>
@@ -281,7 +281,7 @@
             <h3>Automated Workflows</h3>
             <p>
               No rules engine or automated alerts. You won't get notified automatically
-              if a client hasn't been seen in 30 days.
+              if a participant hasn't been seen in 30 days.
             </p>
             <p class="text-muted">
               <strong>Note:</strong> Manual filtering and reports can surface this information.
@@ -365,9 +365,9 @@
         <div class="notice notice-info">
           <p class="notice-title">Scaling Notes</p>
           <p>
-            KoNote2 has been tested with up to ~2,000 active clients. The encrypted search
-            works by loading accessible clients into memory and filtering in Python,
-            which may slow down at larger scales. For organisations with more clients,
+            KoNote2 has been tested with up to ~2,000 active participants. The encrypted search
+            works by loading accessible participants into memory and filtering in Python,
+            which may slow down at larger scales. For organisations with more participants,
             performance testing is recommended.
           </p>
         </div>
