@@ -1,6 +1,6 @@
 # KoNote Website
 
-Marketing and documentation website for [KoNote](https://github.com/gilliankerr/KoNote), an open source participant outcome management system for nonprofits.
+Marketing and documentation website for [KoNote](https://github.com/LogicalOutcomes/konote-app), an open source participant outcome management system for nonprofits.
 
 ## Structure
 
