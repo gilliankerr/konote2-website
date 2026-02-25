@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KoNote features: participant records, outcome plans, progress notes, metrics tracking, messaging, meetings and calendar, consent management, participant portal, role-based access, audit logging, data erasure, and AI-assisted writing.">
+  <meta name="description" content="KoNote features: participant records, outcome plans, progress notes, metrics tracking, surveys, messaging, meetings and calendar, consent management, participant portal, role-based access, audit logging, data erasure, and AI-assisted writing.">
   <title>Features — KoNote</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -252,6 +252,7 @@
             </p>
             <ul>
               <li>Participants log in to view their own outcome plans and progress</li>
+              <li>Complete assigned surveys and check-ins</li>
               <li>Self-report on metrics between sessions</li>
               <li>View progress charts and milestone history</li>
               <li>Private journal for participant reflections</li>
@@ -261,6 +262,26 @@
               <li>Account lockout after failed attempts</li>
               <li>Agency controls which fields and plans are visible</li>
               <li>Optional feature — disabled by default</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Surveys</h3>
+            <p>
+              Collect structured feedback from participants — intake forms, satisfaction
+              surveys, standardised assessments, and recurring check-ins.
+            </p>
+            <ul>
+              <li>Six question types: short text, long text, single choice, multiple choice, rating scale, yes/no</li>
+              <li>Multi-page forms with section-based navigation</li>
+              <li>Conditional logic — show or hide sections based on previous answers</li>
+              <li>Section scoring (sum or average) for standardised instruments</li>
+              <li>Three delivery channels: shareable public links, participant portal, or staff data entry</li>
+              <li>Automatic assignment rules — trigger surveys on events, enrolment, or schedule</li>
+              <li>CSV import for existing instruments (PHQ-9, SPDAT, etc.)</li>
+              <li>Full bilingual support (English/French)</li>
+              <li>Free-text answers encrypted at rest</li>
+              <li>Response export as CSV</li>
             </ul>
           </div>
 
@@ -339,11 +360,13 @@
           <div class="card">
             <h3>Clinical Assessments</h3>
             <p>
-              KoNote lets you define custom metrics, but doesn't include standardised
-              clinical assessment tools (GAD-7, AUDIT-C, etc.) out of the box.
+              KoNote doesn't include standardised clinical assessment tools
+              (GAD-7, AUDIT-C, etc.) out of the box. It's an outcome tracking system,
+              not a clinical EMR.
             </p>
             <p class="text-muted">
-              <strong>Note:</strong> You can create custom metrics that mirror these assessments.
+              <strong>Note:</strong> You can import standardised instruments as surveys
+              via CSV, or create custom metrics that mirror these assessments.
             </p>
           </div>
 
