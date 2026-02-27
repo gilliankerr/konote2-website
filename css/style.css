@@ -6,9 +6,9 @@
    ============================================ */
 :root {
   /* Colours - accessible contrast ratios */
-  --color-primary: #1a5f7a;        /* Teal blue - main brand */
-  --color-primary-dark: #134657;   /* Darker for hover states */
-  --color-primary-light: #e8f4f8;  /* Light tint for backgrounds */
+  --color-primary: #3176aa;        /* KoNote logo blue */
+  --color-primary-dark: #296490;   /* Darker for hover states */
+  --color-primary-light: #e8f0f8;  /* Light tint for backgrounds */
 
   --color-secondary: #2d6a4f;      /* Forest green - accent */
   --color-secondary-light: #e9f5f0;
@@ -223,14 +223,14 @@ pre code {
 }
 
 .site-logo {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--color-primary);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-.site-logo:hover {
-  color: var(--color-primary-dark);
+.site-logo img {
+  height: 32px;
+  width: auto;
 }
 
 .site-nav {
