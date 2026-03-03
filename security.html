@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How KoNote protects participant data: encryption, access control, audit logging, and compliance features.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="How KoNote protects participant data: encryption, access control, audit logging, PHIPA/PIPEDA compliance, and Canadian data residency.">
   <title>Security & Privacy — KoNote</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -157,6 +158,23 @@
           </div>
 
           <div class="card">
+            <h3>Canadian Data Residency</h3>
+            <p>
+              For organisations requiring data to stay in Canada, KoNote supports
+              deployment to Canadian infrastructure.
+            </p>
+            <ul>
+              <li><strong>OVHcloud Beauharnois:</strong> Dedicated Canadian data centre in Quebec</li>
+              <li><strong>Azure Canada Central:</strong> Microsoft's Canadian cloud region</li>
+              <li><strong>Self-hosted:</strong> Deploy on any Canadian server you control</li>
+              <li><strong>Encryption keys:</strong> Stored in Azure Key Vault or your secure infrastructure</li>
+            </ul>
+            <p class="text-muted">
+              Participant data, backups, and encryption keys all stay within Canadian borders.
+            </p>
+          </div>
+
+          <div class="card">
             <h3>Security Headers</h3>
             <p>
               HTTP security headers configured by default.
@@ -277,21 +295,24 @@
         <h2>Compliance Features</h2>
 
         <div class="card">
-          <h3>PIPEDA Readiness</h3>
+          <h3>PHIPA &amp; PIPEDA Readiness</h3>
           <p>
             KoNote includes features to support compliance with Canada's
-            Personal Information Protection and Electronic Documents Act.
+            Personal Information Protection and Electronic Documents Act (PIPEDA)
+            and Ontario's Personal Health Information Protection Act (PHIPA).
           </p>
           <ul>
-            <li>Encryption of personal information</li>
+            <li>Encryption of personal information (Fernet AES at rest)</li>
             <li>Access controls and audit logging</li>
-            <li>Consent tracking fields</li>
+            <li>Consent recording with immutable withdrawal tracking</li>
+            <li>Cross-program consent enforcement — clinical notes shared only with participant or agency permission</li>
             <li>Data retention configuration</li>
             <li>Multi-stage data erasure workflow with approval chain</li>
             <li>Privacy policy template</li>
+            <li>Canadian data residency option (OVHcloud Beauharnois, QC)</li>
           </ul>
           <p class="text-muted">
-            <strong>Note:</strong> Using KoNote doesn't automatically make you PIPEDA-compliant.
+            <strong>Note:</strong> Using KoNote doesn't automatically make you PHIPA- or PIPEDA-compliant.
             Compliance depends on how you configure and operate the system,
             your policies, and your staff practices.
           </p>
