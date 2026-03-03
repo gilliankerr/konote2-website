@@ -213,15 +213,18 @@
           </button>
           <div class="faq-answer">
             <p>
-              KoNote is a web application that requires an internet connection
-              for full functionality. However, a service worker provides a graceful
-              offline fallback — if connectivity drops, you'll see a friendly message
-              and the app resumes automatically when you're back online.
+              The KoNote web interface requires an internet connection for full
+              functionality. A service worker provides a graceful offline fallback —
+              if connectivity drops, you'll see a friendly message and the app
+              resumes automatically when you're back online.
             </p>
             <p>
-              There is no offline data entry or local storage. If staff need to work
-              in locations without internet, they would need to take notes elsewhere
-              and enter them into KoNote later.
+              For field work in locations without internet, KoNote integrates with
+              ODK Central for offline-capable mobile data collection. Staff collect
+              data on Android devices and sync it to KoNote when connectivity is
+              available. PII protection tiers control what identifiers are sent to
+              field devices, and a device loss protocol protects data if a device
+              is lost or stolen.
             </p>
           </div>
         </div>
@@ -298,13 +301,16 @@
           </button>
           <div class="faq-answer">
             <p>
-              KoNote is designed for single-agency use. While you could technically
-              create separate "programs" for different organisations, there's no
-              true multi-tenancy with data isolation between organisations.
+              Yes. KoNote supports multi-agency hosting, where multiple organisations
+              share a single server while maintaining strict data separation. Each
+              agency gets its own isolated database and encryption key, with
+              independent configuration for terminology, features, and programs.
             </p>
             <p>
-              Each organisation should run their own instance for proper data
-              separation and security.
+              This is designed for umbrella organisations, consortia, or regional
+              networks that want to reduce hosting costs without compromising
+              data privacy. Each agency's data remains fully isolated from
+              other agencies on the same server.
             </p>
           </div>
         </div>
