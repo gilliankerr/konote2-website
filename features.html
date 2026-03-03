@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KoNote features: participant records, outcome plans, progress notes, metrics tracking, surveys, messaging, meetings and calendar, consent management, participant portal, role-based access, audit logging, data erasure, and AI-assisted writing.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="KoNote features: participant records, outcome plans, progress notes, metrics tracking, surveys, funder reporting, CIDS compliance, participant portal, executive dashboard, group circles, AI-assisted goal writing, and more.">
   <title>Features — KoNote</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -126,6 +127,21 @@
           </div>
 
           <div class="card">
+            <h3>Circles (Family &amp; Network Groups)</h3>
+            <p>
+              Link participants who share a household, family, or support network
+              into a named group for coordinated service delivery.
+            </p>
+            <ul>
+              <li>Named circles with relationship roles (parent, child, partner, etc.)</li>
+              <li>View all circle members from any participant's profile</li>
+              <li>Shared timeline across circle members</li>
+              <li>Cross-program circle membership</li>
+              <li>Privacy controls — circle membership doesn't grant data access</li>
+            </ul>
+          </div>
+
+          <div class="card">
             <h3>Events & Alerts</h3>
             <p>
               Record significant milestones and flag important information.
@@ -202,6 +218,21 @@
           </div>
 
           <div class="card">
+            <h3>Executive Dashboard</h3>
+            <p>
+              High-level outcome monitoring for directors and executives who
+              need the big picture without accessing individual participant records.
+            </p>
+            <ul>
+              <li>Agency-wide outcome statistics at a glance</li>
+              <li>Program cards with enrolment, active participants, and achievement rates</li>
+              <li>Aggregate demographic breakdowns</li>
+              <li>No access to individual participant data — monitoring only</li>
+              <li>Accessible to the Executive role</li>
+            </ul>
+          </div>
+
+          <div class="card">
             <h3>Audit Logging</h3>
             <p>
               Complete record of who accessed what and when.
@@ -226,7 +257,7 @@
               <li>Enable/disable features via toggles</li>
               <li>Full bilingual interface (English/French) following canada.ca conventions</li>
               <li>CSV import/export for metric library management</li>
-              <li>Funder report templates with custom demographic breakdowns</li>
+              <li>Agency-configurable custom fields for participant profiles</li>
             </ul>
           </div>
 
@@ -241,6 +272,20 @@
               <li>Auto-approval or manual review</li>
               <li>Capacity limits and deadlines</li>
               <li>Waitlist management</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Demo Mode</h3>
+            <p>
+              Built-in demo accounts for training and evaluation without
+              affecting real participant data.
+            </p>
+            <ul>
+              <li>Pre-configured demo user accounts with sample data</li>
+              <li>Safe training environment for new staff</li>
+              <li>Regenerate anytime to start fresh — no risk to real data</li>
+              <li>Demo login buttons on the sign-in page</li>
             </ul>
           </div>
 
@@ -302,35 +347,52 @@
           </div>
 
           <div class="card">
-            <h3>AI-Assisted Writing</h3>
+            <h3>AI-Assisted Writing &amp; Analysis</h3>
             <p>
-              Optional AI features to help staff with documentation tasks.
+              Optional AI features to help staff with goal writing, documentation, and analysis.
             </p>
             <ul>
+              <li>AI-assisted goal building — natural language goal writing with research-grounded validation</li>
               <li>Metric suggestions based on target descriptions</li>
               <li>Outcome goal improvement suggestions</li>
               <li>Note structure assistance</li>
               <li>Funder narrative generation from aggregate metrics</li>
+              <li>Suggestion themes — qualitative feedback grouping and pattern analysis</li>
               <li>Outcome insights — AI-generated program summaries with transparency timestamps</li>
+              <li>Two-tier toggle: tools-only mode (no participant data) or de-identified analysis mode</li>
               <li>Privacy-safe — no participant identifying information sent to AI</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Reporting & Export</h3>
+            <h3>Funder Reporting</h3>
+            <p>
+              Generate templated reports for funders and partners with the data they need.
+            </p>
+            <ul>
+              <li>Configurable funder report templates</li>
+              <li>Demographic breakdowns by program or agency</li>
+              <li>Achievement rate summaries (% of participants meeting targets)</li>
+              <li>Multi-step approval workflow for funder reports</li>
+              <li>Common Impact Data Standard (CIDS) metadata tagging</li>
+              <li>JSON-LD export for standards-compliant data sharing</li>
+              <li>AI-generated funder narrative summaries from aggregate data</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Data Export &amp; Portability</h3>
             <p>
               Get data out when you need it — with controls to prevent misuse.
             </p>
             <ul>
-              <li>Funder report templates with custom demographic breakdowns</li>
-              <li>Achievement rate summaries (% of participants meeting targets)</li>
-              <li>CSV export of participant data and metrics</li>
-              <li>PDF progress reports</li>
+              <li>Individual participant export in PDF, CSV, and JSON formats</li>
               <li>Secure, time-limited export links (24-hour expiry)</li>
               <li>Elevated export controls — large exports trigger admin notification and delay</li>
               <li>Download tracking and admin revocation</li>
+              <li>CSV export of participant data and metrics</li>
               <li>Audit log export</li>
-              <li>Demographics and achievements reports</li>
+              <li>Agency-wide export via encrypted management command (AES-256-GCM)</li>
             </ul>
           </div>
         </div>
@@ -385,10 +447,13 @@
             <h3>Mobile App</h3>
             <p>
               KoNote is web-only. The interface is responsive and works on tablets
-              and phones, but there's no native app or offline access.
+              and phones, but there's no native app.
             </p>
             <p class="text-muted">
-              <strong>Workaround:</strong> Add to home screen for app-like experience.
+              <strong>Note:</strong> A service worker provides a graceful offline
+              fallback — you'll see a friendly message if connectivity drops, and
+              the app resumes when you're back online. Add to home screen for an
+              app-like experience.
             </p>
           </div>
 
@@ -468,7 +533,11 @@
               </tr>
               <tr>
                 <td>Deployment</td>
-                <td>Docker Compose (Railway, Azure, Elestio, or self-hosted)</td>
+                <td>Docker Compose (Railway, Azure, OVHcloud, Elestio, or self-hosted)</td>
+              </tr>
+              <tr>
+                <td>Canadian Hosting</td>
+                <td>OVHcloud Beauharnois data centre (QC) for Canadian data residency</td>
               </tr>
               <tr>
                 <td>License</td>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="How to evaluate and deploy KoNote. Deployment options, requirements, and step-by-step guidance.">
   <title>Getting Started — KoNote</title>
   <link rel="stylesheet" href="css/style.css">
@@ -208,6 +209,23 @@
           </div>
 
           <div class="card">
+            <h3>OVHcloud (Beauharnois, QC)</h3>
+            <p><strong>Canadian data residency</strong></p>
+            <p>
+              Deploy to OVHcloud's Beauharnois data centre in Quebec.
+              Docker Compose with Caddy reverse proxy and automated self-healing.
+            </p>
+            <ul>
+              <li><strong>Cost:</strong> Varies by VPS plan</li>
+              <li><strong>Difficulty:</strong> Medium</li>
+              <li><strong>Data location:</strong> Canada (Quebec)</li>
+            </ul>
+            <p class="text-muted">
+              Best for: Organisations requiring Canadian data residency at lower cost than Azure.
+            </p>
+          </div>
+
+          <div class="card">
             <h3>Self-Hosted</h3>
             <p><strong>Full control</strong></p>
             <p>
@@ -230,7 +248,8 @@
           <p>
             If your organisation requires participant data to stay in Canada,
             Railway's US-based infrastructure may not be suitable.
-            Consider Azure (Canada Central region) or self-hosting in a Canadian data centre.
+            Consider OVHcloud Beauharnois, Azure (Canada Central region),
+            or self-hosting in a Canadian data centre.
           </p>
         </div>
       </div>
