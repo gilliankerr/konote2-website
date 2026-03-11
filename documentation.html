@@ -11,6 +11,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="stylesheet" href="/_pagefind/pagefind-ui.css">
 </head>
 <body>
   <a href="#main" class="skip-nav">Skip to main content</a>
@@ -31,6 +32,7 @@
         <a href="services.html">Services</a>
         <a href="faq.html">FAQ</a>
       </nav>
+      <button class="search-trigger" aria-label="Search" id="search-trigger">Search</button>
     </div>
   </header>
 
@@ -248,5 +250,15 @@
       });
     }
   </script>
+  <dialog class="search-dialog" id="search-dialog" aria-label="Search KoNote">
+    <div class="search-dialog-inner">
+      <button class="search-dialog-close" aria-label="Close search" id="search-close">&times;</button>
+      <div id="search"></div>
+    </div>
+  </dialog>
+
+  <script src="/_pagefind/pagefind-ui.js"></script>
+  <script src="js/search.js"></script>
+
 </body>
 </html>
